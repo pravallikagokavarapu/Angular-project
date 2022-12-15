@@ -1,0 +1,30 @@
+.assessment-container{   
+    width:100%;  
+    padding: 1em;
+    background-color: lightgray; 
+    overflow-y: visible; 
+}
+
+.questions{  
+    font-weight: bold;
+    
+}
+
+.question_answer{    
+    padding: 1em;
+}
+
+.button-align{
+    position: fixed;
+    right: 5%;
+    bottom: 2%;
+}
+
+
+
+.container-fluid{
+   margin:0em;
+   padding:0em;
+  
+}
+

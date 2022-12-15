@@ -1,0 +1,47 @@
+<div class="container-fluid">
+    <div class="assessment-container">
+        <form [formGroup]="assessmentForm">
+            <div [formArrayName]="'formArrayName'">
+                <h4 class="font-weight-bold text-center">Assessment</h4>
+                <div class="question_answer" *ngFor="let item of currentQuestionAnswers, let i=index;">
+                    <div [formGroupName]="i">
+                        <p class="questions">{{item.q}}</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"  id="answer"
+                                formControlName="answer" value="{{item.optiona}}">
+                            <label class="form-check-label" for="answer">
+                                {{item.optiona}}
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="answer" value="{{item.optionb}}"
+                                formControlName="answer">
+                            <label class="form-check-label" for="answer">
+                                {{item.optionb}}
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"  id="answer" value="{{item.optionc}}"
+                                formControlName="answer">
+                            <label class="form-check-label" for="answer">
+                                {{item.optionc}}
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"  id="answer" value="{{item.optiond}}"
+                                formControlName="answer">
+                            <label class="form-check-label" for="answer">
+                                {{item.optiond}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group button-align">               
+                <button type="button" class="btn btn-danger mx-2" 
+                    (click)="submit($event)">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="instructions-container">
+        <h3>Instructions to be followed by candidate before taking the exams.</h3>
+        <ul>
+            <li>The exam is monitored by the proctor online using the webcam.</li>
+            <li>The participant should not navigate away from the website.</li>
+            <li>The participant should not move away from the webcam as well.</li>
+            <li>In case of genuine reasons due to which the site gets navigated, please contact the support team.</li>
+            <li>On pressing the proceed button, the questions will be displayed and the participant has 50 minutes to complete the assessment.</li>
+            <li>On pressing the quit button, the participant will be redirected to the login page and the assessment attempt is not lost.</li>
+        </ul>
+        <div class="form-group text-center">
+            <button type="button" class="btn btn-primary mx-2" (click)="proceed($event)">Proceed</button>
+            <button type="button" class="btn btn-danger mx-2" (click)="quit($event)">Quit</button> 
+        </div>
+    </div>
+</div>
